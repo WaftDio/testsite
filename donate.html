@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PoliteHub - Покупка доната</title>
+
+    <link rel="icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+</head>
+<style>
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: 195px;
+        margin-top: 50px;
+    }
+    
+    th,
+    td:first-child {
+        background: #33373bc2;
+        color: white;
+        padding: 10px 50px;
+    }
+    
+    th,
+    td {
+        border-style: solid;
+        border-width: 0 1px 2px 0;
+        border-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    td {
+        background: #63458ae0;
+    }
+    
+    th:first-child {
+        text-align: left;
+    }
+    
+    td:first-child {
+        background: #63458ae0;
+    }
+    
+    th:hover {
+        background: #33373b;
+    }
+    
+    td:hover {
+        background: #63458a;
+    }
+</style>
+
+<body class="body-main">
+    <div class="header">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">PoliteHub</a>
+                </div>
+                <div class="menu">
+                    <span class="tbs-icon-menu"></span>
+                </div>
+            </div>
+
+            <div class="donate">
+                <div class="title1">
+                    <h1>Покупка доната</h1>
+                </div>
+                <table>
+                    <tr>
+                        <th>Набор</th>
+                        <th>Цена</th>
+                        <th>Вещь 1</th>
+                        <th>Вещь 2</th>
+                        <th>Вещь 3</th>
+                    </tr>
+                    <tr>
+                        <td>Эконом</td>
+                        <td>10 RUB</td>
+                        <td>Железный сет</td>
+                        <td>24 Золотых яблок</td>
+                        <td>2 стака стрел</td>
+                    </tr>
+                    <tr>
+                        <td>Вип</td>
+                        <td>30 RUB</td>
+                        <td>Алмазный сет</td>
+                        <td>64 Золотых яблок</td>
+                        <td>2 стака стрел,пёрлов</td>
+                    </tr>
+                    <tr>
+                        <td>Премиум</td>
+                        <td>55 RUB</td>
+                        <td>Зачар.Алмаз. сет</td>
+                        <td>Стак Зачар.Яблок</td>
+                        <td>3 стака пёрлов</td>
+                    </tr>
+                    <tr>
+                        <td>Элита</td>
+                        <td>80 RUB</td>
+                        <td>Зачар.Незеритовый сет</td>
+                        <td>2 стака Зачар.Яблок</td>
+                        <td>5 Стаков пёрлов</td>
+                    </tr>
+                </table>
+
+                <div class="buy">
+                    <a href="https://vk.com/dmitrydizayner" target="_blink"><input type="submit" name="buy" value="Купить"></a>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="info1">
+            <a href="https://vk.com/politehub" target="_blink "></a>
+        </div>
+
+    </div>
+    <div class="menu-box">
+        <div class="menu-main">
+            <div class="menu-top">
+                <div class="menu-title">
+                    <h2>Меню</h2>
+                </div>
+                <div class="menu-close">
+                    <span class="tbs-icon-cancel"></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="https://vk.com/politehub" target="_blink"><span class="tbs-icon-vkontakte"></span>Наше сообщество</a></li>
+                    <li><a href="donate.html"><span class="tbs-icon-basket"></span>Купить донат</a></li>
+                    <li><a href="forum/index.html" target="_blink"><span class="tbs-icon-chat"></span>Наш дискорд</a></li>
+                    <li><a href="https://www.youtube.com" target="_blink"><span class="tbs-icon-youtube-play"></span>Наш ютуб канал</a></li>
+                    <li><a href="download.html"><span class="tbs-icon-download"></span>Скачать игру</a></li>
+                    <li><a href="https://vk.com/politehub" target="_blink"><span class="tbs-icon-help"></span>Поддержка</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $('.menu').click(function() {
+            $('.menu-box').fadeIn('400', function() {
+                $('.menu-box').addClass('menu-block');
+            });
+        });
+        $('.menu-close').click(function() {
+            $('.menu-box').fadeOut('400', function() {
+                $('.menu-box').removeClass('menu-block');
+            });
+        });
+    </script>
+</body>
+
+</html>
